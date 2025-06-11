@@ -6,3 +6,9 @@ El proyecto The Safety Place busca ayudar a las personas a manejar sus emociones
 La aplicacion busca ser el control de todos los sistemas al interior del domo conectados a un arduino uno, la aplicacion es capaz de controlar la iluminacion RGB, el aroma de los difusores, la musica y la ventilacion, esta ademas conduce al usuarion a la inmersion del domo.
 
 EL aplicativo esta desarrollado en su totalidad en Kotlin y acompañado de XML, mediante Android Estudio.
+
+## Capturas de la App
+
+## Pantalla principal
+
+![Principal](https://github.com/KenjiMaster/THE_SAFETY_PLACE/issues/1)
