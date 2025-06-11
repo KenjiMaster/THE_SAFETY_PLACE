@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
+    tools:context=".primeraapp.ManejoActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/redon3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/veiws3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Cómo Manejar Tus Emociones"
+                android:gravity="center"
+                android:textSize="30dp"
+                />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/baseline_question_mark_24"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:textSize="20dp"
+                android:text="Los sentimientos son respuestas emocionales que experimentamos como resultado de nuestras percepciones y experiencias. Es importante reconocer que los sentimientos son experiencias subjetivas y pueden estar influenciados por diferentes factores, como las circunstancias, las relaciones o nuestro estado emocional en ese momento. Recordar esto nos ayuda a no tomar decisiones impulsivas basadas únicamente en nuestros sentimientos del momento y nos permite tener una perspectiva más equilibrada en nuestras relaciones y decisiones.&#10;&#10;¿Cómo podemos manejar nuestras emociones?&#10;&#10;Es esencial tener en cuenta que las emociones no son ni buenas ni malas en sí mismas. Simplemente surgen en respuesta a lo que nos rodea. Por ejemplo, el enojo aparece cuando algo nos molesta, y la tristeza nos ayuda a lidiar con la pérdida o el dolor.&#10;Existen diversas formas de combatir las emociones fuertes. Aquí te presento algunas estrategias que podrían ser útiles:&#10;&#10;1. Respiración profunda: Practica la respiración profunda y consciente para calmarte. Inhala lenta y profundamente por la nariz, mantén el aire unos segundos y exhala lentamente por la boca. Repite varias veces.&#10;&#10;2. Distrae tu mente: Realiza actividades que te distraigan y te ayuden a cambiar el enfoque de tus emociones intensas. Puedes leer un libro, ver una película, escuchar música o practicar algún hobby.&#10;&#10;3. Habla con alguien de confianza: Comparte tus sentimientos y emociones con alguien de confianza, ya sea un amigo, familiar o terapeuta. A veces, solo expresar lo que sientes puede aliviar la carga emocional.&#10;&#10;4. Practica la autocompasión: Sé amable contigo mismo/a y date permiso para sentir emociones intensas sin juzgarte. Reconoce que es normal experimentar una amplia gama de emociones y date el espacio para procesarlas."
+
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+    <View
+        android:id="@+id/veiws3"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#F5F0E0"
+        />
+
+
+
+
+    <ImageView
+        android:id="@+id/imgs1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/casa"
+
+        android:backgroundTint="#d2df30"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="@+id/veiws3"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicio"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/imgs1"
+        app:layout_constraintStart_toStartOf="@id/imgs1"
+        app:layout_constraintEnd_toEndOf="@id/imgs1"
+        />
+
+    <ImageView
+        android:id="@+id/imgs2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/tuerca"
+        android:backgroundTint="#d2df30"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="@+id/veiws3"
+        app:layout_constraintStart_toEndOf="@id/imgs1"
+        app:layout_constraintEnd_toStartOf="@id/imgs3"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Configuración"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/imgs2"
+        app:layout_constraintStart_toStartOf="@id/imgs2"
+        app:layout_constraintEnd_toEndOf="@id/imgs2"
+        />
+
+    <ImageView
+        android:id="@+id/imgs3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/admiracion"
+        android:backgroundTint="#d2df30"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toTopOf="@id/veiws3"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Más"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/imgs3"
+        app:layout_constraintStart_toStartOf="@id/imgs3"
+        app:layout_constraintEnd_toEndOf="@id/imgs3"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="raw_resources">
+        <item>cancion1.mp3</item>
+        <item>cancion2.mp3</item>
+        <item>cancion3.mp3</item>
+        <item>cancion4.mp3</item>
+        <item>cancion5.mp3</item>
+        <item>cancion6.mp3</item>
+        <item>cancion7.mp3</item>
+        <!-- Agrega más elementos aquí según los nombres de tus archivos en res/raw -->
+    </string-array>
+</resources>

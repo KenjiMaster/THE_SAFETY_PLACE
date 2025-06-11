@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0F222D"
+    android:padding="16dp"
+    tools:context=".primeraapp.SongListActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/redon3"
+        android:backgroundTint="#F5F0E0"
+        android:orientation="vertical">
+
+        <!-- Título de la actividad -->
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0F222D"
+            android:text="Lista de Canciones"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <!-- Lista de canciones -->
+        <ListView
+            android:id="@+id/list"
+            android:background="@drawable/redon4"
+            android:backgroundTint="#F5F0E0"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Barra de reproducción -->
+        <RelativeLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/redon3"
+            android:backgroundTint="#1b3e52"
+            >
+
+            <ImageView
+                android:id="@+id/imgSongCover"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/txtSongName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/imgSongCover"
+                android:textColor="#F5F0E0"
+                android:text="Canción"
+                android:textSize="20sp"
+                android:layout_marginStart="16dp" />
+
+            <ImageView
+                android:id="@+id/btnPlayPause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_play_arrow_48"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/redon3"
+                android:layout_alignParentEnd="true"
+                 />
+
+            <ImageView
+                android:id="@+id/btnNext"
+                android:src="@drawable/baseline_skip_next_48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redon3"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/btnPlayPause"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
+

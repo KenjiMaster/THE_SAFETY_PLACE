@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg_color_uno"
+    tools:context=".primeraapp.ajustes">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="230dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="10dp"
+        android:text="Configuracion BT"
+        android:textSize="23sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#FFFF"
+        android:background="@drawable/redox"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/btnOn"
+        android:layout_width="wrap_content"
+        android:text="On"
+        android:textSize="34dp"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnOff"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnOff"
+        android:layout_width="wrap_content"
+        android:text="Off"
+        android:textSize="34dp"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        app:layout_constraintStart_toEndOf="@id/btnOn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnDisp"
+        android:layout_width="wrap_content"
+        android:text="Dispositivos"
+        android:textSize="34dp"
+        app:layout_constraintTop_toBottomOf="@id/btnOn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnConex"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnConex"
+        android:layout_width="wrap_content"
+        android:text="conex"
+        android:textSize="34dp"
+        app:layout_constraintTop_toBottomOf="@id/btnOff"
+        app:layout_constraintStart_toEndOf="@id/btnDisp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Spinner
+        android:id="@+id/spinDisp"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:background="@drawable/redox"
+        android:backgroundTint="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDisp" />
+    <EditText
+        android:id="@+id/txOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/spinDisp"
+        android:backgroundTint="#FFFF"
+        android:hint="Enviar Texto"
+        android:gravity="center"
+        android:textSize="34dp"
+        android:textColor="#FFFF"
+        android:textColorHint="#FFFF"
+        />
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:text="Enviar"
+        android:textSize="34dp"
+        app:layout_constraintTop_toBottomOf="@id/txOut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnGrad"
+        android:layout_width="match_parent"
+        android:text="Volver"
+        android:textSize="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

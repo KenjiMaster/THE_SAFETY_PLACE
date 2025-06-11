@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
+    tools:context=".primeraapp.PregunActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/redon3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/veiws3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Nuestro Propósito"
+                android:textSize="30dp"
+                />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/baseline_stars_24"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:textSize="20dp"
+                android:text="Este espacio está diseñado para ayudarte a regular tus emociones y fomentar la consciencia emocional, por medio de la percepción del entorno. Sin embargo, es importante destacar que no está destinado a tratar trastornos o enfermedades mentales. Si tienes alguna duda sobre tu salud mental, te recomendamos buscar la ayuda de un profesional de la psicología. ¡Cuidemos de nuestra salud emocional juntos!"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+    <View
+        android:id="@+id/veiws3"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#F5F0E0"
+        />
+
+
+
+
+    <ImageView
+        android:id="@+id/imgs1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/casa"
+
+        android:backgroundTint="#d2df30"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="@+id/veiws3"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicio"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/imgs1"
+        app:layout_constraintStart_toStartOf="@id/imgs1"
+        app:layout_constraintEnd_toEndOf="@id/imgs1"
+        />
+
+    <ImageView
+        android:id="@+id/imgs2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/tuerca"
+        android:backgroundTint="#d2df30"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="@+id/veiws3"
+        app:layout_constraintStart_toEndOf="@id/imgs1"
+        app:layout_constraintEnd_toStartOf="@id/imgs3"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Configuración"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/imgs2"
+        app:layout_constraintStart_toStartOf="@id/imgs2"
+        app:layout_constraintEnd_toEndOf="@id/imgs2"
+        />
+
+    <ImageView
+        android:id="@+id/imgs3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/admiracion"
+        android:backgroundTint="#d2df30"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toTopOf="@id/veiws3"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Más"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/imgs3"
+        app:layout_constraintStart_toStartOf="@id/imgs3"
+        app:layout_constraintEnd_toEndOf="@id/imgs3"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
