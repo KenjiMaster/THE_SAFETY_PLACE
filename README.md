@@ -9,6 +9,10 @@ EL aplicativo esta desarrollado en su totalidad en Kotlin y acompañado de XML, 
 
 ## Capturas de la App
 
-## Pantalla principal
+### Pantalla principal
 
 ![Principal](https://github.com/KenjiMaster/THE_SAFETY_PLACE/issues/1)
+
+### Pantalla de ajustes
+
+![Ajustes](https://github.com/user-attachments/assets/a053dd52-1fe4-4b71-b976-85802fe778fc)
